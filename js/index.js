@@ -42,7 +42,8 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Get all 'a' tags, make them into an array and add the text? look at codepen for iterating...
-const links = document.getElementsByTagName('a')
+const links = document.querySelectorAll('a')
+
 links[0].textContent = 'Services'
 links[1].textContent = 'Product'
 links[2].textContent = 'Vision'
@@ -50,12 +51,38 @@ links[3].textContent = 'Features'
 links[4].textContent = 'About'
 links[5].textContent = 'Contact'
 
+links.forEach(a => {
+  a.style.color = 'green'
+})
+
+//change color to green
+// links[0].style.color = 'green'
+// links[1].style.color = 'green'
+// links[2].style.color = 'green'
+// links[3].style.color = 'green'
+// links[4].style.color = 'green'
+// links[5].style.color = 'green'
+//append and prepend
+const append = document.createElement('a')
+append.textContent = 'Appended Item'
+append.style.color = 'blue'
+const prepend = document.createElement('a')
+prepend.textContent = 'Prepended Item'
+prepend.style.color ='red'
+const parentElement = document.querySelector('nav')
+parentElement.appendChild(append)
+parentElement.prepend(prepend)
+
+
+
+
 // add text to h1, add <br> and add button text to .cta-img figure out how to add line break
-const lineBreak = document.createElement('BR')
+
 
 const header = document.querySelector('h1')
-// header.insertAdjacentElement("afterbegin", '<br>test</br>')
-header.innerText ='DOM Is Awesome'
+header.innerHTML ='DOM <br>Is</br> Awesome'
+
+
 const startButton = document.querySelector('.cta button')
 startButton.innerText = 'Get Started'
 startButton.fontSize ='16px'
@@ -131,13 +158,14 @@ bottomContentPara[2].textContent = 'Vision content elementum magna eros, ac posu
 const contact = document.querySelector('.contact h4')
 contact.textContent = 'Contact'
 const contactPara = document.querySelectorAll('.contact p')
-contactPara[0].textContent = '123 Way 456 Street Somewhere, USA'
+contactPara[0].innerHTML = '123 Way 456 Street <br> Somewhere, USA'
 contactPara[1].textContent = '1 (888) 888-8888'
 contactPara[2].textContent = 'sales@greatidea.io'
 
 //add text to footer p
 const footerText = document.querySelector('footer p')
 footerText.textContent = 'Copyright Great Idea! 2018'
+
 
 
 
