@@ -64,8 +64,8 @@ console.log(startButton)
 
 
 //add source for #cta-image
-const codeImg = document.getElementById("cta-img");
-codeImg.src="img/header-img.png";
+const topImg = document.getElementById("cta-img");
+topImg.src="img/header-img.png";
 
 
 //add text to 2 h4's and 2 p's in .top-content.text-content
@@ -77,6 +77,10 @@ topContentPara[0].textContent = 'Features content elementum magna eros, ac posue
 topContentPara[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
 //add source to .middle-img
+const midImg = document.getElementById ('middle-img')
+midImg.src="img/mid-page-accent.jpg"
+
+
 
 //add text to 2 h4's and 2 p's in .bottom-content.text-content
 
