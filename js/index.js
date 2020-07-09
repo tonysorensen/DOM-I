@@ -40,3 +40,54 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Get all 'a' tags, make them into an array and add the text? look at codepen for iterating...
+const links = document.getElementsByTagName('a')
+links[0].textContent = 'Services'
+links[1].textContent = 'Product'
+links[2].textContent = 'Vision'
+links[3].textContent = 'Features'
+links[4].textContent = 'About'
+links[5].textContent = 'Contact'
+
+// add text to h1, add <br> and add button text to .cta-img figure out how to add line break
+const lineBreak = document.createElement('BR')
+
+const header = document.querySelector('h1')
+// header.insertAdjacentElement("afterbegin", '<br>test</br>')
+header.innerText ='DOM Is Awesome'
+const startButton = document.getElementsByTagName('button')
+startButton.innerText = 'Get Started'
+startButton.fontSize ='16px'
+console.log(startButton)
+
+
+
+//add source for #cta-image
+const codeImg = document.getElementById("cta-img");
+codeImg.src="img/header-img.png";
+
+
+//add text to 2 h4's and 2 p's in .top-content.text-content
+const topContentHeads = document.getElementsByTagName('h4');
+topContentHeads[0].textContent = 'Features'
+topContentHeads[1].textContent = 'About';
+const topContentPara = document.getElementsByTagName ('p');
+topContentPara[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+topContentPara[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+//add source to .middle-img
+
+//add text to 2 h4's and 2 p's in .bottom-content.text-content
+
+//add text to h4 and p's in .contact
+
+//add text to footer p
+
+
+
+
+
+
+
+
