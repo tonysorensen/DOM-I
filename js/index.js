@@ -56,7 +56,7 @@ const lineBreak = document.createElement('BR')
 const header = document.querySelector('h1')
 // header.insertAdjacentElement("afterbegin", '<br>test</br>')
 header.innerText ='DOM Is Awesome'
-const startButton = document.getElementsByTagName('button')
+const startButton = document.querySelector('.cta button')
 startButton.innerText = 'Get Started'
 startButton.fontSize ='16px'
 console.log(startButton)
